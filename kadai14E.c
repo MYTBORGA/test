@@ -56,5 +56,7 @@ int main(void)
 		g_padd = g_padd->next;
 	 }
 	 
-	 return 0;
+	 printf("end\n");
+	 
+	 return 0
 } 
