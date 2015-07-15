@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//　難易度たかすぎぃ
 typedef struct Gaku_inf
 {
 	char g_no[7];
@@ -20,13 +20,13 @@ int main(void)
 	
 	g_pstart = g_padd;
 	
-	printf("�w�Дԍ�-->");
+	printf("ŠwÐ”Ô†-->");
 	while(scanf("%s",g_padd->g_no) != EOF)
 	{
-		printf("�Ȗ�1-->");
+		printf("‰È–Ú1-->");
 		scanf("%d",&g_padd->g_kamoku1);
 		
-		printf("�Ȗ�2-->");
+		printf("‰È–Ú2-->");
 		scanf("%d",&g_padd->g_kamoku2);
 		
 		g_padd->g_heikin = (double)(g_padd->g_kamoku1 + g_padd->g_kamoku2) / 2;
@@ -34,7 +34,7 @@ int main(void)
 		g_padd->next = (dat *)malloc(sizeof(dat));
 		g_padd = g_padd->next;
 		
-		printf("�w�Дԍ�-->");
+		printf("ŠwÐ”Ô†-->");
 	}
 	
 	g_padd->next = NULL;
@@ -45,13 +45,13 @@ int main(void)
 	
 	 while(g_padd->next != NULL)
 	 {
-	 	printf("�w�Дԍ�:%s\n",g_padd->g_no);
+	 	printf("ŠwÐ”Ô†:%s\n",g_padd->g_no);
 		
-		printf("�Ȗ�1:%d\n",g_padd->g_kamoku1);
+		printf("‰È–Ú1:%d\n",g_padd->g_kamoku1);
 		
-		printf("�Ȗ�2:%d\n",g_padd->g_kamoku2);
+		printf("‰È–Ú2:%d\n",g_padd->g_kamoku2);
 		
-		printf("����:%.1f\n",g_padd->g_heikin);
+		printf("•½‹Ï:%.1f\n",g_padd->g_heikin);
 		
 		g_padd = g_padd->next;
 	 }
